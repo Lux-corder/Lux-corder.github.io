@@ -478,6 +478,47 @@ section h2 {
 }
  
  /* Skill Section ends */
+ /* project section */
+ .project-section {
+    background-color: rgba(247, 247, 247, 0.968627451);
+    padding: 100px 5px;
+  }
+  .container-1{
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    text-align: center;
+    padding: 30px 0px;
+  }
+ .project_section h1{
+    text-align: center;
+    font-weight: bold;
+    color: #173057;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    padding-top: 20px;
+   
+ }
+ .project_section h1::after{
+    content: "";
+    background: #173057;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+
+}
+
+  .project_section .container-1 .card img {
+    height: 250px;
+  }
+  .project_section .container-1 .card .card-body {
+    padding-bottom: 20px;
+   
+  }
+  .project_section .container-1 .card .card-body a{
+    background-color: #173057;
+  }
 
 /* service section start */
 .services_area {
@@ -809,75 +850,76 @@ span{
     font-weight: bold;
     color: white;
 }
-  /* footer section ends*/
 
-  @media (max-width: 768px) {
-
+@media (max-width: 360px) {
+    .hero_section {
+        height: auto;
+        padding: 20px;
+    }
     .hero_section::before {
-        right: 0;
-        width: 100%;
-        height: 420px;
-       padding: 0;
-       
+        display: none;
     }
-
-    .container-fluid a img {
-        width: 80%;
-    }
-
     .main {
-        position: relative;
-        right: 0;
-        top: 0;
-        margin-top: 200px;
+        position: static;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
     }
-
     .headings {
-        font-size: 30px;
-        margin: 20px 0px;
+        font-size: 28px;
     }
-
-    .hero_section .main .lixmi {
-        padding: 15px 25px;
-        margin-top: 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    .container_skill_section {
-        flex-direction: column;
-        gap: 20px;
-        padding: 10px;
-        align-items: center;
-    }
-
-    .skills {
-        width: 100%;
-        max-width: none;
-        padding: 5px 10px;
-    }
-
-    .resume_skill_container {
-        width: 100%;
+    .cv_button {
         margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .flex-wrapper {
         flex-direction: column;
         align-items: center;
     }
-
-    .resume_skill_container .hard_skill,
-    .resume_skill_container .soft_skill {
-        width: 80%;
+    .flex-item {
         margin: 10px 0;
+        width: 90%;
     }
-    .cv_button{
-        padding: 20px 35px;
-        background: rgb(2, 2, 61);
-        border: 1px solid white;
-        color: white;
-        outline: none;
-        transition: .6s ease;
-        margin-top: 20px;
-        margin-left: 18%;
+    .skill_name {
+        font-size: 14px;
+    }
+    .skill_section h1 {
+        font-size: 24px;
+    }
+    .resume_intro {
+        font-size: 16px;
+    }
+    .card {
+        width: 100%;
+    }
+    .card-body h4 {
+        font-size: 16px;
+    }
+    .card-body p {
+        font-size: 14px;
+    }
+    .contact_section .container-contact {
+        width: 90%;
+    }
+    .contact_section .container-contact form input, 
+    .contact_section .container-contact form textarea {
+        font-size: 14px;
+    }
+    .contact_section .container-contact form button {
+        font-size: 14px;
+    }
+    .resume {
+        max-width: 90%;
+    }
+    .skills {
+        width: 90%;
+    }
+    .gallery-item {
+        width: 90%;
+    }
+    .social a {
+        font-size: 30px;
+        padding: 10px;
     }
 }
- 
