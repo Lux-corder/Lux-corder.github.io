@@ -520,6 +520,14 @@ section h2 {
     background-color: #173057;
   }
 
+  .container2{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 30px 0px;
+    gap: 5px;
+  }
+
 /* service section start */
 .services_area {
     padding: 2.5rem 1rem; 
